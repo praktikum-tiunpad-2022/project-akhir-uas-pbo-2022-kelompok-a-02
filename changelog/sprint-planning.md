@@ -25,19 +25,24 @@
 | 2.2.1 | Logika Food Spawning | TBA | 
 | 2.2.2 | Link dengan Snake | TBA | 
 | 2.3   | Mengatur dan Membuat Logika Point | TBA | 
-| 2.3   | Link Antar Jframe | TBA | 
+| 2.4   | Link Antar Jframe | TBA | 
 | 3.1   | Membuat Setting | TBA | 
 | 3.2   | Membuat Leaderboard | TBA | 
-| 3.3   | Menambahkan Mekanisme Baru | TBA | 
+| 3.3   | Mempercantik UI | TBA | 
+| 3.4   | Menambahkan Mekanisme Baru | TBA | 
 
 ## Notes : This is an early (and kind of rushed) plan. Changes are to be expected.
 
 
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
-| --- | ---------- | ------- | 
-| 1.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+|-------|------------|---------|
+| 1.1   | Inisialisasi JFrame | TBA | 
+| 1.2   | Membuat Alur Program | OR | 
+| 1.3   | Konstruksi Main Screen |  | 
+| 1.4   | Konstruksi Game Screen |  | 
+| 1.5   | Konstruksi Game Over Screen |  | 
+| 1.6   | Mengatur Control |  | 
 
 ## Retrospective 
 
