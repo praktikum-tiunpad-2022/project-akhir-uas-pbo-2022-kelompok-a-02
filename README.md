@@ -14,9 +14,9 @@ Snake Game is a very simple game where the player controls a snake. The goal of 
 | 140810210041  | Muhammad Fauzan Azhiima |
 
 ## Change log
-- **[Sprint Planning](changelog/sprint-planning.md) - (planning date)** 
-   -  Short changes 1
-   - Short changes 2
+- **[Sprint Planning](changelog/sprint-planning.md) - (20 November 2022)** 
+   -  Mendiskusikan Apa saja yang akan ada di projek
+   
 
 - **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
    - Short changes 1
