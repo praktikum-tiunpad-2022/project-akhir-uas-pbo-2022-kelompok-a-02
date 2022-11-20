@@ -11,8 +11,8 @@
 ## Sprint Backlog Keseluruhan 
 | ID    | Title/Desc | Asignee | 
 |-------|------------|---------|
-| 1.1   | Inisialisasi Gradle | TBA | 
-| 1.2   | Membuat Alur Program | TBA | 
+| 1.1   | Inisialisasi Gradle | O | 
+| 1.2   | Membuat Alur Program | OR | 
 | 1.3   | Konstruksi Main Screen | TBA | 
 | 1.4   | Konstruksi Game Screen | TBA | 
 | 1.5   | Konstruksi Game Over Screen | TBA | 
@@ -37,7 +37,7 @@
 ## Sprint Backlog Plan (Sprint 1)
 | ID  | Title/Desc | Asignee | 
 |-------|------------|---------|
-| 1.1   | Inisialisasi JFrame | TBA | 
+| 1.1   | Inisialisasi JFrame | O | 
 | 1.2   | Membuat Alur Program | OR | 
 | 1.3   | Konstruksi Main Screen |  | 
 | 1.4   | Konstruksi Game Screen |  | 
