@@ -1,12 +1,12 @@
 # Scrum Report (Sprint 1)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 20/11/2022 to 21/11/2022
 
 ## Team (Insert your name)
-| NPM           | Name        |
-| ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| NPM           | Name                    | Kode| 
+| ------------- |-------------------------|-----|
+| 140810210015  | Amir Salim              | A   |
+| 140810210029  | Rifqi Muhammad Ahdan    | R   |
+| 140810210041  | Muhammad Fauzan Azhiima | O   |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
@@ -17,7 +17,7 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1   | Inisialisasi JFrame | O | Done
+| 1.1   | Inisialisasi JFrame | O | Done |
 | 1.2   | Membuat Alur Program | OR | Done |
 | 1.3   | Konstruksi Main Screen |  |  |
 | 1.4   | Konstruksi Game Screen |  |  |
