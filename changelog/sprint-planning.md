@@ -10,6 +10,7 @@
 
 ## Sprint Backlog Keseluruhan 
 | ID    | Title/Desc | Asignee | 
+|-------|------------|---------|
 | 1.1   | Inisialisasi JFrame | TBA | 
 | 1.2   | Membuat Alur Program | TBA | 
 | 1.3   | Konstruksi Main Screen | TBA | 
