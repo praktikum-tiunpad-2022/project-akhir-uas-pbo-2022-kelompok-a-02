@@ -27,6 +27,10 @@ C. Batasan Lainnya
 
 D. Challenge Ideas (Optional)
 - Dapat menyimpan dan menampilkan leaderboard dengan 10 score terbaik.
+- Terdapat 2 mode game, yaitu singleplayer mode dan multiplayer mode (1 v 1).
+- Di multiplayer mode, fitur yang berbeda dengna singleplayer yaitu :
+  - Terdapat controler yang berbeda untuk masing-masing playernya.
+  - Terdapat banyak food dalam satu frame
 
 Game Referensi
 - https://helpfulsheep.com/snake/
