@@ -5,6 +5,7 @@ This repository is a final project (Java GUI) from Object-Oriented Programming C
 [Challenge Guidelines](challenge-guideline.md)
 
 **Please create a description for this project here**
+Snake Game is a very simple game where the player controls a snake. The goal of the game is to get as many points as possible by 'eating' the food that is spawned in the map of the game. Everytime the snake eat a food, it becomes longer! But, the player needs to be careful, because if the snake hits itself, it dies! (or in some versions, this also applies when he hits the wall of the map)
 
 ## Credits
 | NPM           | Name        |
