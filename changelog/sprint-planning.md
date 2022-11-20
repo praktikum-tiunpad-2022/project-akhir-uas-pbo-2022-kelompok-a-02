@@ -17,12 +17,12 @@
 | 1.5   | Konstruksi Game Over Screen | TBA | 
 | 1.6   | Mengatur Control | TBA | 
 | 2.1   | Mengatur dan Membuat Logika Snake | TBA | 
-| 2.1.1 | Cara Bergerak Snake | TBA | 
-| 2.1.2 | Pertumbuhan Snake | TBA | 
-| 2.1.3 | Kecepatan Snake | TBA | 
+| 2.1 | Cara Bergerak Snake | TBA | 
+| 2.1 | Pertumbuhan Snake | TBA | 
+| 2.1 | Kecepatan Snake | TBA | 
 | 2.2   | Mengatur dan Membuat Logika Food | TBA | 
-| 2.2.1 | Logika Food Spawning | TBA | 
-| 2.2.1 | Link dengan Snake | TBA | 
+| 2.2 | Logika Food Spawning | TBA | 
+| 2.2 | Link dengan Snake | TBA | 
 | 2.3   | Mengatur dan Membuat Logika Point | TBA | 
 | 2.3   | Link Antar Jframe | TBA | 
 | 3.1   | Membuat Setting | TBA | 
