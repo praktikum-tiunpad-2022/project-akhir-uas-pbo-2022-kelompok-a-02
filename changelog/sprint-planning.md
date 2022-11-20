@@ -13,10 +13,10 @@
 |-------|------------|---------|
 | 1.1   | Inisialisasi Gradle | O | 
 | 1.2   | Membuat Alur Program | OR | 
-| 1.3   | Konstruksi Main Screen | TBA | 
-| 1.4   | Konstruksi Game Screen | TBA | 
-| 1.5   | Konstruksi Game Over Screen | TBA | 
-| 1.6   | Mengatur Control | TBA | 
+| 1.3   | Konstruksi Main Screen |  | 
+| 1.4   | Konstruksi Game Screen |  | 
+| 1.5   | Konstruksi Game Over Screen |  | 
+| 1.6   | Mengatur Control |  | 
 | 2.1   | Mengatur dan Membuat Logika Snake | TBA | 
 | 2.1.1 | Cara Bergerak Snake | TBA | 
 | 2.1.2 | Pertumbuhan Snake | TBA | 
