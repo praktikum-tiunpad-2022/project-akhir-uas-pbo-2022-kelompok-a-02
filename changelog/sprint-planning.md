@@ -16,16 +16,16 @@
 | 1.3   | Konstruksi Main Screen |  | 
 | 1.4   | Konstruksi Game Screen |  | 
 | 1.5   | Konstruksi Game Over Screen |  | 
-| 1.6   | Mengatur Control |  | 
-| 2.1   | Mengatur dan Membuat Logika Snake | TBA | 
-| 2.1.1 | Cara Bergerak Snake | TBA | 
-| 2.1.2 | Pertumbuhan Snake | TBA | 
-| 2.1.3 | Kecepatan Snake | TBA | 
-| 2.2   | Mengatur dan Membuat Logika Food | TBA | 
-| 2.2.1 | Logika Food Spawning | TBA | 
-| 2.2.2 | Link dengan Snake | TBA | 
-| 2.3   | Mengatur dan Membuat Logika Point | TBA | 
-| 2.4   | Link Antar Jframe | TBA | 
+| 2.1   | Mengatur Control |  | 
+| 2.2   | Mengatur dan Membuat Logika Snake | TBA | 
+| 2.2.1 | Cara Bergerak Snake | TBA | 
+| 2.2.2 | Pertumbuhan Snake | TBA | 
+| 2.2.3 | Kecepatan Snake | TBA | 
+| 2.3   | Mengatur dan Membuat Logika Food | TBA | 
+| 2.3.1 | Logika Food Spawning | TBA | 
+| 2.3.2 | Link dengan Snake | TBA | 
+| 2.4   | Mengatur dan Membuat Logika Point | TBA | 
+| 2.5   | Link Antar Jframe | TBA | 
 | 3.1   | Membuat Setting | TBA | 
 | 3.2   | Membuat Leaderboard | TBA | 
 | 3.3   | Mempercantik UI | TBA | 

@@ -11,7 +11,7 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 6             | n             |
+| 5             | n             |
 
 ## Sprint 1 Backlog
 
@@ -19,10 +19,10 @@
 | --- | ---------- | ------- | ------ |
 | 1.1   | Inisialisasi JFrame | O | Done |
 | 1.2   | Membuat Alur Program | OR | Done |
-| 1.3   | Konstruksi Main Screen |  |  |
-| 1.4   | Konstruksi Game Screen |  |  |
-| 1.5   | Konstruksi Game Over Screen |  |  |
-| 1.6   | Mengatur Control |  |  |
+| 1.3   | Konstruksi Main Screen |A  |  |
+| 1.4   | Konstruksi Game Screen |O  |  |
+| 1.5   | Konstruksi Game Over Screen |A |  |
+
 
 ## Retrospective 
 
