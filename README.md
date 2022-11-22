@@ -18,9 +18,8 @@ Snake Game is a very simple game where the player controls a snake. The goal of 
    -  Mendiskusikan Apa saja yang akan ada di projek
    
 
-- **[Sprint 1](changelog/sprint-1.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+- **[Sprint 1](changelog/sprint-1.md) - (date from 20 November 2022 until 21 November 2022)** 
+   - Inisiasi Gradle 
 
 - **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
    - Short changes 1
