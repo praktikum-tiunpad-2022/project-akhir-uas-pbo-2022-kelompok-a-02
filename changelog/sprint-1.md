@@ -29,6 +29,8 @@
 Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
 
 ## Next Sprint Backlog (Sprint 2)
+| ID  | Title/Desc | Asignee |
+| --- | ---------- | ------- |
 | 2.1   | Mengatur Control | TBA | 
 | 2.2   | Mengatur dan Membuat Logika Snake | TBA | 
 | 2.2.1 | Cara Bergerak Snake | TBA | 
