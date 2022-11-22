@@ -1,7 +1,7 @@
 # Scrum Report (Sprint 1)
 | From 20/11/2022 to 21/11/2022
 
-## Team (Insert your name)
+## Team ORA
 | NPM           | Name                    | Kode| 
 | ------------- |-------------------------|-----|
 | 140810210015  | Amir Salim              | A   |
@@ -11,7 +11,7 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 5             | n             |
+| 5             | 2             |
 
 ## Sprint 1 Backlog
 
@@ -31,6 +31,9 @@ Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian t
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee |
 | --- | ---------- | ------- |
+| 1.3   | Konstruksi Main Screen |A  | 
+| 1.4   | Konstruksi Game Screen |O  | 
+| 1.5   | Konstruksi Game Over Screen |A | 
 | 2.1   | Mengatur Control | TBA | 
 | 2.2   | Mengatur dan Membuat Logika Snake | TBA | 
 | 2.2.1 | Cara Bergerak Snake | TBA | 
