@@ -1,7 +1,7 @@
 # Sprint Planning 
 | 20/11/2022
 
-### Team (Insert your name)
+### Team ORA
 | NPM           | Name                    | Kode| 
 | ------------- |-------------------------|-----|
 | 140810210015  | Amir Salim              | A   |
