@@ -13,19 +13,19 @@
 |-------|------------|---------|
 | 1.1   | Inisialisasi Gradle | O | 
 | 1.2   | Membuat Alur Program | OR | 
-| 1.3   | Konstruksi Main Screen |  | 
-| 1.4   | Konstruksi Game Screen |  | 
-| 1.5   | Konstruksi Game Over Screen |  | 
-| 2.1   | Mengatur Control |  | 
-| 2.2   | Mengatur dan Membuat Logika Snake | TBA | 
-| 2.2.1 | Cara Bergerak Snake | TBA | 
-| 2.2.2 | Pertumbuhan Snake | TBA | 
-| 2.2.3 | Kecepatan Snake | TBA | 
-| 2.3   | Mengatur dan Membuat Logika Food | TBA | 
-| 2.3.1 | Logika Food Spawning | TBA | 
-| 2.3.2 | Link dengan Snake | TBA | 
-| 2.4   | Mengatur dan Membuat Logika Point | TBA | 
-| 2.5   | Link Antar Jframe | TBA | 
+| 1.3   | Konstruksi Main Screen | A | 
+| 1.4   | Konstruksi Game Screen | O | 
+| 1.5   | Konstruksi Game Over Screen | A | 
+| 2.2   | Mengatur Control |  | 
+| 2.3   | Mengatur dan Membuat Logika Snake | TBA | 
+| 2.3.1 | Cara Bergerak Snake | TBA | 
+| 2.3.2 | Pertumbuhan Snake | TBA | 
+| 2.3.3 | Kecepatan Snake | TBA | 
+| 2.4   | Mengatur dan Membuat Logika Food | TBA | 
+| 2.4.1 | Logika Food Spawning | TBA | 
+| 2.4.2 | Link dengan Snake | TBA | 
+| 2.5   | Mengatur dan Membuat Logika Point | TBA | 
+| 2.6   | Link Antar Jframe | TBA | 
 | 3.1   | Membuat Setting | TBA | 
 | 3.2   | Membuat Leaderboard | TBA | 
 | 3.3   | Mempercantik UI | TBA | 
@@ -39,11 +39,10 @@
 |-------|------------|---------|
 | 1.1   | Inisialisasi JFrame | O | 
 | 1.2   | Membuat Alur Program | OR | 
-| 1.3   | Konstruksi Main Screen |  | 
-| 1.4   | Konstruksi Game Screen |  | 
-| 1.5   | Konstruksi Game Over Screen |  | 
-| 1.6   | Mengatur Control |  | 
+| 1.3   | Konstruksi Main Screen | A | 
+| 1.4   | Konstruksi Game Screen | O | 
+| 1.5   | Konstruksi Game Over Screen | A | 
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. 
