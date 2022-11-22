@@ -19,9 +19,9 @@
 | --- | ---------- | ------- | ------ |
 | 1.1   | Inisialisasi gradle | O | Done |
 | 1.2   | Membuat Alur Program | OR | Done |
-| 1.3   | Konstruksi Main Screen |A  |  |
+| 1.3   | Konstruksi Main Screen |A  | Fail |
 | 1.4   | Konstruksi Game Screen |O  | Fail |
-| 1.5   | Konstruksi Game Over Screen |A |  |
+| 1.5   | Konstruksi Game Over Screen |A | Fail |
 
 
 ## Retrospective 
@@ -29,7 +29,13 @@
 Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
 
 ## Next Sprint Backlog (Sprint 2)
-| ID  | Title/Desc | Asignee | 
-| --- | ---------- | ------- | 
-| 2.1 | Preparing the x | Jane Doe | 
-| 2.2 | Make the x | John Doe | 
+| 2.1   | Mengatur Control |  | 
+| 2.2   | Mengatur dan Membuat Logika Snake | TBA | 
+| 2.2.1 | Cara Bergerak Snake | TBA | 
+| 2.2.2 | Pertumbuhan Snake | TBA | 
+| 2.2.3 | Kecepatan Snake | TBA | 
+| 2.3   | Mengatur dan Membuat Logika Food | TBA | 
+| 2.3.1 | Logika Food Spawning | TBA | 
+| 2.3.2 | Link dengan Snake | TBA | 
+| 2.4   | Mengatur dan Membuat Logika Point | TBA | 
+| 2.5   | Link Antar Jframe | TBA | 
