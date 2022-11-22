@@ -26,7 +26,8 @@
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+- Mulai terlalu mepet (karena banyaknya kesibukan masing-masing anggota)
+- Masih belum dapat mengintegrasi JavaFX ke dalam gradle, sehingga progress terhambat
 
 ## Next Sprint Backlog (Sprint 2)
 | ID  | Title/Desc | Asignee |
