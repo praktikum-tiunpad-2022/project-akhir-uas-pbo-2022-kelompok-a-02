@@ -17,10 +17,10 @@
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
-| 1.1   | Inisialisasi JFrame | O | Done |
+| 1.1   | Inisialisasi gradle | O | Done |
 | 1.2   | Membuat Alur Program | OR | Done |
 | 1.3   | Konstruksi Main Screen |A  |  |
-| 1.4   | Konstruksi Game Screen |O  |  |
+| 1.4   | Konstruksi Game Screen |O  | Fail |
 | 1.5   | Konstruksi Game Over Screen |A |  |
 
 
