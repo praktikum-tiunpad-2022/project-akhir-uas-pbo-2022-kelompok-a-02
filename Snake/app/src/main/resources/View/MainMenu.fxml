@@ -48,7 +48,7 @@
             <Button layoutX="272.0" layoutY="308.0" mnemonicParsing="false"  onAction="#switchToScore" style="-fx-background-color: #5F8D4E;" text="SCORE BOARD" />
             <ImageView fitHeight="189.0" fitWidth="145.0" layoutX="256.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@/snake.png" />
+                  <Image url="@snake.png" />
                </image>
             </ImageView>
 

@@ -16,7 +16,7 @@ public class SceneController {
 
     public void switchToMain(ActionEvent event) throws IOException{
         root = FXMLLoader.load(
-        getClass().getResource("/MainMenu.fxml"));
+        getClass().getResource("/View/MainMenu.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -24,7 +24,7 @@ public class SceneController {
     }
     public void switchToScore(ActionEvent event) throws IOException{
         root = FXMLLoader.load(
-        getClass().getResource("/ScoreBoard.fxml"));
+        getClass().getResource("/View/ScoreBoard.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
