@@ -1,3 +1,4 @@
+package Model;
 public class Node {
     private int x, y;
     public Node(){

@@ -6,28 +6,8 @@
  * User Manual available at https://docs.gradle.org/7.3.3/userguide/building_java_projects.html
  */
 
-// plugins {
-//     // Apply the application plugin to add support for building a CLI application in Java.
-//     id 'application'
-//     id 'org.openjfx.javafxplugin' version '0.0.13'
-// }
-
-// repositories {
-//     // Use Maven Central for resolving dependencies.
-//     mavenCentral()
-// }
-
-// dependencies {
-//     // Use JUnit test framework.
-//     testImplementation 'junit:junit:4.13.2'
-
-//     // This dependency is used by the application.
-//     implementation 'com.google.guava:guava:30.1.1-jre'
-// }
-
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    id 'distribution'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.0.13'
 }
@@ -38,23 +18,44 @@ repositories {
 }
 
 dependencies {
+    // Use JUnit test framework.
+    testImplementation 'junit:junit:4.13.2'
+
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:30.1.1-jre'
 }
 
-javafx {
-   version = "19"
-    modules = [ 'javafx.controls','javafx.fxml' ]
-}
+// plugins {
+//     // Apply the application plugin to add support for building a CLI application in Java.
+//     id 'application'
+//     id 'distribution'
+//     id 'org.openjfx.javafxplugin' version '0.0.10'
+// }
 
-testing {
-    suites {
-        // Configure the built-in test suite
-        test {
-            // Use TestNG test framework
-            useTestNG('7.4.0')
-        }
-    }
+// repositories {
+//     // Use Maven Central for resolving dependencies.
+//     mavenCentral()
+// }
+
+// dependencies {
+//     // This dependency is used by the application.
+//     implementation 'com.google.guava:guava:30.1.1-jre'
+// }
+
+
+// testing {
+//     suites {
+//         // Configure the built-in test suite
+//         test {
+//             // Use TestNG test framework
+//             useTestNG('7.4.0')
+//         }
+//     }
+// }
+
+javafx {
+    version = "19"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 application {
