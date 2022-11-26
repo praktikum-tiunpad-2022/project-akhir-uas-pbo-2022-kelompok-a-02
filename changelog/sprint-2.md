@@ -1,12 +1,12 @@
 # Scrum Report (Sprint 2)
-| From dd/mm/yyyy to dd/mm/yyyy
+| From 22/11/2022 to 29/11/2022
 
 ## Team ORA
-| NPM           | Name        |
-| ------------- |-------------|
-| 140810xx00xx  | John Doe    |
-| 140810xx00xx  | Jane Doe    |
-| 140810xx00xx  | Lorem Ipsum |
+| NPM           | Name                    | Kode| 
+| ------------- |-------------------------|-----|
+| 140810210015  | Amir Salim              | A   |
+| 140810210029  | Rifqi Muhammad Ahdan    | R   |
+| 140810210041  | Muhammad Fauzan Azhiima | O   |
 
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
