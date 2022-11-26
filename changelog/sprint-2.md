@@ -17,9 +17,9 @@
 
 | ID  | Title/Desc | Asignee |
 | --- | ---------- | ------- |
-| 1.3   | Konstruksi Main Screen |A  | 
-| 1.4   | Konstruksi Game Screen |O  | 
-| 1.5   | Konstruksi Game Over Screen |A | 
+| 1.3   | Konstruksi Main Screen | RA  | 
+| 1.4   | Konstruksi Game Screen |RA  | 
+| 1.5   | Konstruksi Game Over Screen | RA | 
 | 2.1   | Mengatur Control | TBA | 
 | 2.2   | Mengatur dan Membuat Logika Snake | TBA | 
 | 2.2.1 | Cara Bergerak Snake | TBA | 
