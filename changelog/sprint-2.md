@@ -11,7 +11,7 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 14             | 6             |
+| 15             | 6             |
 
 ## Sprint 2 Backlog
 
@@ -26,6 +26,7 @@
 | 2.2.1 | Cara Bergerak Snake | O | Done |
 | 2.2.2 | Pertumbuhan Snake | R | |
 | 2.2.3 | Kecepatan Snake | O | Done |
+| 2.2.4 | Hit Detection Snake | O |  |
 | 2.3   | Mengatur dan Membuat Logika Food | A | |
 | 2.3.1 | Logika Food Spawning | A | |
 | 2.3.2 | Link dengan Snake | TBA | |
