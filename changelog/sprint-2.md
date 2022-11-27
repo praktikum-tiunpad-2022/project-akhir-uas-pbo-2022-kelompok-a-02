@@ -11,7 +11,7 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 14             | 5             |
+| 14             | 6             |
 
 ## Sprint 2 Backlog
 
@@ -24,17 +24,21 @@
 | 2.1   | Mengatur Control | O | Done |
 | 2.2   | Mengatur dan Membuat Logika Snake | O | |
 | 2.2.1 | Cara Bergerak Snake | O | Done |
-| 2.2.2 | Pertumbuhan Snake | TBA | |
-| 2.2.3 | Kecepatan Snake | TBA | |
-| 2.3   | Mengatur dan Membuat Logika Food | TBA | |
-| 2.3.1 | Logika Food Spawning | TBA | |
+| 2.2.2 | Pertumbuhan Snake | R | |
+| 2.2.3 | Kecepatan Snake | O | Done |
+| 2.3   | Mengatur dan Membuat Logika Food | A | |
+| 2.3.1 | Logika Food Spawning | A | |
 | 2.3.2 | Link dengan Snake | TBA | |
 | 2.4   | Mengatur dan Membuat Logika Point | TBA | |
 | 2.5   | Link Antar Jframe | TBA | |
 
 ## Retrospective 
 
-Sprint kemarin dianggap terlalu sedikit sehingga diperlukan adanya penyesuaian tugas. Lorem ipsum dolor sit amet
+# Ojan
+- Membuat plan yang kurang matang. jadi kebanyakan plan yang saya buat di awal sebenernya kurang jelas.
+- Mulai kerja agak mepet
+# Rifqi
+# Amir
 
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc | Asignee | 
