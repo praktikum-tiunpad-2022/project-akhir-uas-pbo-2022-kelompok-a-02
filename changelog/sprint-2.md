@@ -11,7 +11,7 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 14             | 9             |
+| 14             | 11             |
 
 ## Sprint 2 Backlog
 
@@ -22,11 +22,11 @@
 | 1.5   | Konstruksi Game Over Screen | RA | Done |
 | 1.6   | Konstruksi Leaderboard Screen | RA | Done |
 | 2.1   | Mengatur Control | O | Done |
-| 2.2   | Mengatur dan Membuat Logika Snake | O | |
+| 2.2   | Mengatur dan Membuat Logika Snake | OR | Done |
 | 2.2.1 | Cara Bergerak Snake | O | Done |
 | 2.2.2 | Pertumbuhan Snake | O | Done|
 | 2.2.3 | Kecepatan Snake | O | Done |
-| 2.2.4 | Hit Detection Snake | O |  |
+| 2.2.4 | Hit Detection Snake | OR | Done |
 | 2.3   | Mengatur dan Membuat Logika Food | A | Done |
 | 2.3.1 | Logika Food Spawning | A | Done |
 | 2.4   | Mengatur dan Membuat Logika Point | R | |
