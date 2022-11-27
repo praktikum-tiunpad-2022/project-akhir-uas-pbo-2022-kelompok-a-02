@@ -22,9 +22,9 @@ public class Snake {
         head = new Node();
     }
     public Snake(int x, int y){
-        head = new Node(x, y, "4674E9");
+        head = new Node(x, y, "E92f88");
         body = new ArrayList<Node>();
-        for (int i = 1; i <= 4; i++) {
+        for (int i = 1; i <= 5; i++) {
             body.add(new Node(x-i, y, "4674E9"));
         }
     }
@@ -76,11 +76,10 @@ public class Snake {
     }
 
     public void drawSnake(GraphicsContext gambar){
-        head.drawNode(gambar);
-        
         for (int i = 0; i < body.size(); i++) {
             body.get(i).drawNode(gambar);
         }
+        head.drawNode(gambar);
     }
 
     // public boolean isEating(Fruit food){
