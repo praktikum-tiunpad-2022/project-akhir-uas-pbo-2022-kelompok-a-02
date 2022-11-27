@@ -34,11 +34,11 @@
 
 ## Retrospective 
 
-# Ojan
+### Ojan
 - Membuat plan yang kurang matang. jadi kebanyakan plan yang saya buat di awal sebenernya kurang jelas.
 - Mulai kerja agak mepet
-# Rifqi
-# Amir
+### Rifqi
+### Amir
 
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc | Asignee | 
