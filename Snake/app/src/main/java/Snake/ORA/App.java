@@ -1,8 +1,12 @@
 package Snake.ORA;
 import Model.Snake;
+
+import java.util.ArrayList;
+
 import Model.DIRECTION;
 import Model.Fruit;
 // import Model.Node;
+import Model.Node;
 
 // import java.util.concurrent.TimeUnit;
 
@@ -28,7 +32,8 @@ public class App extends Application{
     private GraphicsContext gc;
     // Node coba = new Node(10, 10, "4674E9");
     Fruit coba = new Fruit("FF4500");
-    Snake test = new Snake(05, 05);
+    Snake test = new Snake(49, 49);
+    ArrayList<Node> wall = new ArrayList<Node>();
     
     @Override
     public void start(Stage stage){
@@ -83,20 +88,37 @@ public class App extends Application{
         drawBackground(gc);
         coba.getFruit().drawNode(gc);  
         test.drawSnake(gc);
+        if(isHitting(test)) return;
         test.moveSnake(coba);
     }
 
     private void drawBackground(GraphicsContext gc) {
-        for (int i = 0; i < 40; i++) {
-            for (int j = 0; j < 40; j++) {
+        for (int i = 0; i < 100; i++) {
+            for (int j = 0; j < 100; j++) {
                 if ((i + j) % 2 == 0){
                     gc.setFill(Color.web("AAD751"));
                 } else{
                     gc.setFill(Color.web("A2D149"));
                 }
-                gc.fillRect(i*40, j*40, 40, 40);
+                gc.fillRect(i*8, j*8, 8, 8);
             }
         }
+    }
+
+    private boolean isHitting(Snake player){
+        return(hitBody(player) || hitWall(player));
+    }
+    
+    private boolean hitBody(Snake player){
+        for (int i = 0; i < player.getBody().size(); i++) {
+            if(player.getHead().sameCoor(player.getBody().get(i))) return true;
+        }
+        return false;
+    }
+
+    private boolean hitWall(Snake player){
+        return (player.getHead().getX() == 100 || player.getHead().getY() == 100 
+        || player.getHead().getX() == -1 || player.getHead().getY() == -1);
     }
 
     public static void main(String[] args) {
