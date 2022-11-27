@@ -11,7 +11,7 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 15             | 6             |
+| 14             | 9             |
 
 ## Sprint 2 Backlog
 
@@ -24,12 +24,11 @@
 | 2.1   | Mengatur Control | O | Done |
 | 2.2   | Mengatur dan Membuat Logika Snake | O | |
 | 2.2.1 | Cara Bergerak Snake | O | Done |
-| 2.2.2 | Pertumbuhan Snake | R | |
+| 2.2.2 | Pertumbuhan Snake | O | Done|
 | 2.2.3 | Kecepatan Snake | O | Done |
 | 2.2.4 | Hit Detection Snake | O |  |
-| 2.3   | Mengatur dan Membuat Logika Food | A | |
-| 2.3.1 | Logika Food Spawning | A | |
-| 2.3.2 | Link dengan Snake | TBA | |
+| 2.3   | Mengatur dan Membuat Logika Food | A | Done |
+| 2.3.1 | Logika Food Spawning | A | Done |
 | 2.4   | Mengatur dan Membuat Logika Point | R | |
 | 2.5   | Link Antar Jframe | TBA | |
 
