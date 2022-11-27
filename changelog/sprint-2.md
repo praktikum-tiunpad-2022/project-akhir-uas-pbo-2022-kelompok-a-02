@@ -11,19 +11,19 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 14             | n             |
+| 14             | 5             |
 
 ## Sprint 2 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
 | 1.3   | Konstruksi Main Screen | RA  | Done |
-| 1.4   | Konstruksi Game Screen |RA  | |
+| 1.4   | Konstruksi Game Screen | RA  |  |
 | 1.5   | Konstruksi Game Over Screen | RA | Done |
 | 1.6   | Konstruksi Leaderboard Screen | RA | Done |
-| 2.1   | Mengatur Control | TBA | |
-| 2.2   | Mengatur dan Membuat Logika Snake | TBA | |
-| 2.2.1 | Cara Bergerak Snake | TBA | |
+| 2.1   | Mengatur Control | O | Done |
+| 2.2   | Mengatur dan Membuat Logika Snake | O | |
+| 2.2.1 | Cara Bergerak Snake | O | Done |
 | 2.2.2 | Pertumbuhan Snake | TBA | |
 | 2.2.3 | Kecepatan Snake | TBA | |
 | 2.3   | Mengatur dan Membuat Logika Food | TBA | |
