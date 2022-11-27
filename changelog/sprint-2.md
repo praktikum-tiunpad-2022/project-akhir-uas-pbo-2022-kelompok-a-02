@@ -30,7 +30,7 @@
 | 2.3   | Mengatur dan Membuat Logika Food | A | |
 | 2.3.1 | Logika Food Spawning | A | |
 | 2.3.2 | Link dengan Snake | TBA | |
-| 2.4   | Mengatur dan Membuat Logika Point | TBA | |
+| 2.4   | Mengatur dan Membuat Logika Point | R | |
 | 2.5   | Link Antar Jframe | TBA | |
 
 ## Retrospective 
