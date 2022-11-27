@@ -55,7 +55,7 @@ public class Node {
      */
     public void drawNode(GraphicsContext gambar){
         gambar.setFill(Color.web(info));
-        gambar.fillRoundRect(x*40, y*40, 40, 40, 35, 35);
+        gambar.fillRoundRect(x*8, y*8, 8, 8, 35, 35);
     }
 
     public boolean sameCoor(Node dua){
