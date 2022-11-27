@@ -16,7 +16,7 @@ public class Snake {
     private ArrayList<Node> body;
     private Node head;
     
-    DIRECTION dir = DIRECTION.LEFT;
+    DIRECTION dir = DIRECTION.RIGHT;
     public Snake(){
         body = new ArrayList<Node>();
         head = new Node();
@@ -83,15 +83,38 @@ public class Snake {
         }
     }
 
+    // public boolean isEating(Fruit food){
+    //     if(this.head.getX() == food.getFruit().getX() && 
+    //     this.head.getY() == food.getFruit().getY()){
+    //         return true;
+    //     }
+    //     return false;
+    // }
+
     /**
      * move the rest of the body forward
      * WARNING : Might be source of bug 
      *      -> gajadi, karena diubah dikit algonya
      */
-    public void moveSnake(){
+    public void moveSnake(Fruit food){
         int x = head.getX();
         int y = head.getY();
         dir.moveHead(head);
+
+        if(head.sameCoor(food.getFruit())){
+            body.add(0, new Node(x, y, "4674E9"));
+            food.spawn(this, 20, 20);
+        } else {
+            moveBody(x, y);
+        }
+    }
+
+    /**
+     * 
+     * @param x --> head x
+     * @param y --> head y
+     */
+    public void moveBody(int x, int y){
         for (int i = body.size()-1; i > 0; i--) {
             body.get(i).setX(body.get(i-1).getX());
             body.get(i).setY(body.get(i-1).getY());

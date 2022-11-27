@@ -6,7 +6,7 @@ import javafx.scene.paint.Color;
  * Node.java
  * Foundation for all the blocks that are in the game.
  * x and y is used for coordinates.
- * info is used to link the block with a picture
+ * info is used to link the block with a picture or color to draw the object
  */
 public class Node {
     private int x, y;
@@ -22,6 +22,9 @@ public class Node {
     public Node(int x, int y, String info){
         this.x = x;
         this.y = y;
+        this.info = info;
+    }
+    public Node (String info){
         this.info = info;
     }
     // Setter
@@ -53,5 +56,9 @@ public class Node {
     public void drawNode(GraphicsContext gambar){
         gambar.setFill(Color.web(info));
         gambar.fillRoundRect(x*40, y*40, 40, 40, 35, 35);
+    }
+
+    public boolean sameCoor(Node dua){
+        return (this.x == dua.getX() && this.y == dua.getY());
     }
 }
