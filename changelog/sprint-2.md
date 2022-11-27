@@ -39,6 +39,7 @@
 - Membuat plan yang kurang matang. jadi kebanyakan plan yang saya buat di awal sebenernya kurang jelas.
 - Mulai kerja agak mepet
 ### Rifqi
+- Terlalu lama di proses configure gradle karena kendala informasi
 ### Amir
 
 ## Next Sprint Backlog (Sprint 3)
