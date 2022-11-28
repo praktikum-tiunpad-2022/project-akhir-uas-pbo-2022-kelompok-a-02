@@ -40,11 +40,11 @@
 
 
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="Snake.ORA.SceneController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SceneController">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #E5D9B6;" VBox.vgrow="ALWAYS">
       <children>
-            <Button layoutX="298.0" layoutY="269.0" mnemonicParsing="false" style="-fx-background-color: #5F8D4E;" text="PLAY" />
+            <Button layoutX="298.0" layoutY="269.0" mnemonicParsing="false" onAction="#switchToPlay" style="-fx-background-color: #5F8D4E;" text="PLAY" />
             <Button layoutX="272.0" layoutY="308.0" mnemonicParsing="false"  onAction="#switchToScore" style="-fx-background-color: #5F8D4E;" text="SCORE BOARD" />
             <ImageView fitHeight="189.0" fitWidth="145.0" layoutX="256.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
                <image>
