@@ -29,6 +29,7 @@ public class GameController {
     private Snake uler = new Snake(49, 49);
     private GraphicsContext gc;
     private Scene s;
+    private Timeline timeline; 
 
     @FXML
     private Canvas canvasGame;
@@ -70,7 +71,7 @@ public class GameController {
     }
 
     public void startGame(Scene gameScene){
-        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
+        this.timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
         makan.spawn(uler, 100, 100);
@@ -90,9 +91,17 @@ public class GameController {
                 }
                 
             }
+        
         });{
+           
+            
             
         }
+    }
+
+    public void clearGame(){
+        this.uler.deleteAllBody();
+        this.timeline.stop();
     }
 
      private boolean isHitting(){
@@ -110,6 +119,8 @@ public class GameController {
         return (this.uler.getHead().getX() == 100 || this.uler.getHead().getY() == 100 
         || this.uler.getHead().getX() == -1 || this.uler.getHead().getY() == -1);
     }
+
+    
 
   
     

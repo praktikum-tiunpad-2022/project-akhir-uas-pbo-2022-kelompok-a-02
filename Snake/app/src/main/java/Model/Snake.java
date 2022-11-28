@@ -122,5 +122,10 @@ public class Snake {
         body.get(0).setY(y);
     }
 
+    public void deleteAllBody(){
+        this.body.clear();
+        
+    }
+
 
 }
