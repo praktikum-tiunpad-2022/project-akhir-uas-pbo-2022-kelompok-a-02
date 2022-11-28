@@ -11,14 +11,14 @@
 ## Sprint Overview
 | Planned (n)   | Completed (n) |
 | ------------- |-------------- |
-| 14             | 11             |
+| 14             | 14             |
 
 ## Sprint 2 Backlog
 
 | ID  | Title/Desc | Asignee | Status |
 | --- | ---------- | ------- | ------ |
 | 1.3   | Konstruksi Main Screen | RA  | Done |
-| 1.4   | Konstruksi Game Screen | RA  |  |
+| 1.4   | Konstruksi Game Screen | RA  | Done |
 | 1.5   | Konstruksi Game Over Screen | RA | Done |
 | 1.6   | Konstruksi Leaderboard Screen | RA | Done |
 | 2.1   | Mengatur Control | O | Done |
@@ -29,8 +29,8 @@
 | 2.2.4 | Hit Detection Snake | OR | Done |
 | 2.3   | Mengatur dan Membuat Logika Food | A | Done |
 | 2.3.1 | Logika Food Spawning | A | Done |
-| 2.4   | Mengatur dan Membuat Logika Point | R | |
-| 2.5   | Link Antar Jframe | TBA | |
+| 2.4   | Mengatur dan Membuat Logika Point | R | Done |
+| 2.5   | Link Antar Jframe | A | Done |
 
 ## Retrospective 
 
