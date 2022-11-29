@@ -21,9 +21,12 @@ Snake Game is a very simple game where the player controls a snake. The goal of 
 - **[Sprint 1](changelog/sprint-1.md) - (date from 20 November 2022 until 21 November 2022)** 
    - Inisiasi Gradle 
 
-- **[Sprint 2](changelog/sprint-2.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+- **[Sprint 2](changelog/sprint-2.md) - (date from 22 November 2022 until 28 November 2022)** 
+   - Membuat logika untuk snake
+   - Membuat logika untuk fruit
+   - Membuat hit detection untuk snake
+   - Menambahkan sistem poin
+   - Membuat link antara jhrame (menu -> game, menu -> leaderboard, menu -> exit)
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
    - Short changes 1
