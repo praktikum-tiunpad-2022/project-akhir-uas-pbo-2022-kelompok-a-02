@@ -44,7 +44,7 @@
 - Terlalu lama di proses detection gradle pada vscode karena kendala informasi
 - Pembagian pengerjaan tugas cenderung berkelompok karena posisi bertiga di nangor
 - Beberapa link screen masih belum sempurna karena beberapa kendala
-- Komunikasi kelompok sudah sangat bagus
+- Komunikasi kelompok sedikit bermasalah
 - Sebagian pembagian tugas tidak merata
 ### Amir
 - Karena untuk mengerjakan screen terutama game screen sangat dependent dengan fungsionalitas snake & fruit,        sempat terkendala karena kurang memahami bagian backend snake & fruit yang telah dibuat , kedepannya tiap pekerjaan yang harus dilakukan oleh tim harus memiliki dokumentasi penjelsan di kode nya dengan jelas dan detail agar lebih mudah dipahami yang lain
