@@ -19,6 +19,7 @@ public class SceneController {
     private Stage stage;
     private Scene scene;
     private Parent root;
+    private GameController g; 
 
     public void switchToMain(ActionEvent event) throws IOException{
         root = FXMLLoader.load(
@@ -46,16 +47,17 @@ public class SceneController {
     public void switchToPlay(ActionEvent event) throws IOException{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/GameScreen.fxml"));
         root = loader.load();
-        GameController g = loader.getController();
+        this.g = loader.getController();
         
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        g.startGame(scene);  
-        g = null;   
+        g.startGame(scene);
+        
     }
 
     public void switchToMainAfterPlay(ActionEvent event) throws IOException{
+        g.clearGame();
         root = FXMLLoader.load(
         getClass().getResource("/View/MainMenu.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();

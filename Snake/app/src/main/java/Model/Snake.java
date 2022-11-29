@@ -95,7 +95,7 @@ public class Snake {
      * WARNING : Might be source of bug 
      *      -> gajadi, karena diubah dikit algonya
      */
-    public void moveSnake(Fruit food){
+    public void moveSnake(Point point, Fruit food){
         int x = head.getX();
         int y = head.getY();
         dir.moveHead(head);
@@ -103,6 +103,7 @@ public class Snake {
         if(head.sameCoor(food.getFruit())){
             body.add(0, new Node(x, y, "4674E9"));
             food.spawn(this, 20, 20);
+            point.addPoint();
         } else {
             moveBody(x, y);
         }
@@ -120,6 +121,11 @@ public class Snake {
         }
         body.get(0).setX(x);
         body.get(0).setY(y);
+    }
+
+    public void deleteAllBody(){
+        this.body.clear();
+        
     }
 
 

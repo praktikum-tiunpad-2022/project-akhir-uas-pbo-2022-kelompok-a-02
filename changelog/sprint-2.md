@@ -30,7 +30,7 @@
 | 2.3   | Mengatur dan Membuat Logika Food | A | Done |
 | 2.3.1 | Logika Food Spawning | A | Done |
 | 2.4   | Mengatur dan Membuat Logika Point | R | Done |
-| 2.5   | Link Antar Jframe | A |  |
+| 2.5   | Link Antar Jframe | A | FAIL |
 
 ## Retrospective 
 
@@ -40,6 +40,10 @@
 ### Rifqi
 - Terlalu lama di proses configure gradle karena kendala informasi
 ### Amir
+- Karena untuk mengerjakan screen terutama game screen sangat dependent dengan fungsionalitas snake & fruit,        sempat terkendala karena kurang memahami bagian backend snake & fruit yang telah dibuat , kedepannya tiap pekerjaan yang harus dilakukan oleh tim harus memiliki dokumentasi penjelsan di kode nya dengan jelas dan detail agar lebih mudah dipahami yang lain
+- Tutorial yang tersedia di youtube kebanyakan menggunakan IDE yang berbeda sehingga kesulitan dalam mengaplikasikannya dengan IDE yang tim pakai
+- Fungsionalitas 'back to main' dalam game screen masih belum terimplementasikan dengan baik (ketika ingin main game lagi , aplikasi berjalan dengan sangat laggy)
+- Setelah gameover,belum kembali ke gameover screen
 
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc | Asignee | 

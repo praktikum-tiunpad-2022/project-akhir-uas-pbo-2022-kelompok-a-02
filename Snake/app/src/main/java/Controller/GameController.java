@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
@@ -25,16 +26,23 @@ public class GameController {
     private Stage stage;
     private Scene scene;
     private Parent root;
-    private Fruit makan = new Fruit("FF4500");
-    private Snake uler = new Snake(49, 49);
+    private Fruit buah;
+    private Snake uler;
     private GraphicsContext gc;
     private Scene s;
+    private Point point;
+    private Timeline timeline; 
 
     @FXML
     private Canvas canvasGame;
+    @FXML
+    private Label scoreLabel;
 
     public GameController(){
-              
+        buah = new Fruit("FF4500");
+        uler = new Snake(49, 49);
+        point = new Point();
+        scoreLabel = new Label("0");
     }
 
     public void switchToMain(ActionEvent event) throws IOException{
@@ -62,18 +70,19 @@ public class GameController {
     public void run(){
         this.gc = this.canvasGame.getGraphicsContext2D();
         this.drawBackground();
-        makan.getFruit().drawNode(gc);  
+        buah.getFruit().drawNode(gc);  
         uler.drawSnake(gc);
         if(isHitting()) return;
-        uler.moveSnake(makan);
+        uler.moveSnake(point, buah);
+        scoreLabel.setText(String.valueOf(point.getPoint()));
         
     }
 
     public void startGame(Scene gameScene){
-        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
+        this.timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
-        makan.spawn(uler, 100, 100);
+        buah.spawn(uler, 100, 100);
 
           gameScene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
@@ -90,9 +99,17 @@ public class GameController {
                 }
                 
             }
+        
         });{
+           
+            
             
         }
+    }
+
+    public void clearGame(){
+        this.uler.deleteAllBody();
+        this.timeline.stop();
     }
 
      private boolean isHitting(){
@@ -110,6 +127,8 @@ public class GameController {
         return (this.uler.getHead().getX() == 100 || this.uler.getHead().getY() == 100 
         || this.uler.getHead().getX() == -1 || this.uler.getHead().getY() == -1);
     }
+
+    
 
   
     
