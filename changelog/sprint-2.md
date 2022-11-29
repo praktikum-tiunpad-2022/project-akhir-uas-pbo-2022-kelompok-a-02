@@ -38,13 +38,14 @@
 - Membuat plan yang kurang matang. jadi kebanyakan plan yang saya buat di awal sebenernya kurang jelas.
 - Mulai kerja agak mepet
 - Dokumentasi kode masih kurang jelas
-- Agak maruk, jadi kerjaan porsi anggota kelompok lain terambil
+- Agak maruk, jadi beberapa kerjaan porsi anggota kelompok lain terambil
 - Kurang explorasi
 ### Rifqi
 - Terlalu lama di proses detection gradle pada vscode karena kendala informasi
 - Pembagian pengerjaan tugas cenderung berkelompok karena posisi bertiga di nangor
 - Beberapa link screen masih belum sempurna karena beberapa kendala
-- Koordinasikelompok sudah sangat bagus
+- Komunikasi kelompok sudah sangat bagus
+- Sebagian pembagian tugas tidak merata
 ### Amir
 - Karena untuk mengerjakan screen terutama game screen sangat dependent dengan fungsionalitas snake & fruit,        sempat terkendala karena kurang memahami bagian backend snake & fruit yang telah dibuat , kedepannya tiap pekerjaan yang harus dilakukan oleh tim harus memiliki dokumentasi penjelsan di kode nya dengan jelas dan detail agar lebih mudah dipahami yang lain
 - Tutorial yang tersedia di youtube kebanyakan menggunakan IDE yang berbeda sehingga kesulitan dalam mengaplikasikannya dengan IDE yang tim pakai
@@ -53,6 +54,13 @@
 
 ## Next Sprint Backlog (Sprint 3)
 | ID  | Title/Desc | Asignee | 
-| --- | ---------- | ------- | 
-| 3.1 | Preparing the x | Jane Doe | 
-| 3.2 | Make the x | John Doe | 
+|:---:|:----------:|:-------:| 
+| 3.1   | Memperbaiki link frame | TBA |
+| 3.1.1 | Memperbaiki bug link back to menu | TBA |
+| 3.1.2 | Link ke gameover screen | TBA |
+| 3.2   | Membuat Setting | TBA | 
+| 3.3   | Membuat Leaderboard | TBA | 
+| 3.4   | Mempercantik UI | TBA | 
+| 3.5   | Menambahkan Mode Double Player | TBA | 
+
+
