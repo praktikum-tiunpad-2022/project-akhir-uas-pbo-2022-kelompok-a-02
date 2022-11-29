@@ -37,6 +37,9 @@
 ### Ojan
 - Membuat plan yang kurang matang. jadi kebanyakan plan yang saya buat di awal sebenernya kurang jelas.
 - Mulai kerja agak mepet
+- Dokumentasi kode masih kurang jelas
+- Agak maruk, jadi kerjaan porsi anggota kelompok lain terambil
+- Kurang explorasi
 ### Rifqi
 - Terlalu lama di proses configure gradle karena kendala informasi
 ### Amir
