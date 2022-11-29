@@ -26,11 +26,11 @@
 | 2.2.1 | Cara Bergerak Snake | O | Done |
 | 2.2.2 | Pertumbuhan Snake | O | Done|
 | 2.2.3 | Kecepatan Snake | O | Done |
-| 2.2.4 | Hit Detection Snake | OR | Done |
+| 2.2.4 | Hit Detection Snake | RO | Done |
 | 2.3   | Mengatur dan Membuat Logika Food | A | Done |
 | 2.3.1 | Logika Food Spawning | A | Done |
 | 2.4   | Mengatur dan Membuat Logika Point | R | Done |
-| 2.5   | Link Antar Jframe | A | FAIL |
+| 2.5   | Link Antar Jframe | AR | FAIL |
 
 ## Retrospective 
 
