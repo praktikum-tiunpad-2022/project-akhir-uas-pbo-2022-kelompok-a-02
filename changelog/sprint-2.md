@@ -38,7 +38,10 @@
 - Membuat plan yang kurang matang. jadi kebanyakan plan yang saya buat di awal sebenernya kurang jelas.
 - Mulai kerja agak mepet
 ### Rifqi
-- Terlalu lama di proses configure gradle karena kendala informasi
+- Terlalu lama di proses detection gradle pada vscode karena kendala informasi
+- Pembagian pengerjaan tugas cenderung berkelompok karena posisi bertiga di nangor
+- Beberapa link screen masih belum sempurna karena beberapa kendala
+- Koordinasikelompok sudah sangat bagus
 ### Amir
 - Karena untuk mengerjakan screen terutama game screen sangat dependent dengan fungsionalitas snake & fruit,        sempat terkendala karena kurang memahami bagian backend snake & fruit yang telah dibuat , kedepannya tiap pekerjaan yang harus dilakukan oleh tim harus memiliki dokumentasi penjelsan di kode nya dengan jelas dan detail agar lebih mudah dipahami yang lain
 - Tutorial yang tersedia di youtube kebanyakan menggunakan IDE yang berbeda sehingga kesulitan dalam mengaplikasikannya dengan IDE yang tim pakai
