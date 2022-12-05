@@ -32,10 +32,11 @@ public class GameController {
     private Scene s;
     private Point point;
     private Timeline timeline; 
-    // private Scene s;
 
     @FXML
     private Canvas canvasGame;
+    @FXML
+    private Label scoreLabel;
 
     public GameController(){
         buah = new Fruit("FF4500");
@@ -53,9 +54,7 @@ public class GameController {
         stage.show();
     }
     
-    private void drawBackground() {
-        this.gc = this.canvasGame.getGraphicsContext2D();
-
+    private void drawBackground(GraphicsContext gc) {
         for (int i = 0; i < 100; i++) {
             for (int j = 0; j < 100; j++) {
                 if ((i + j) % 2 == 0){
@@ -70,22 +69,23 @@ public class GameController {
 
     public void run(){
         this.gc = this.canvasGame.getGraphicsContext2D();
-        this.drawBackground();
-        makan.getFruit().drawNode(gc);  
+        buah.getFruit().drawNode(gc);  
         uler.drawSnake(gc);
         if(isHitting()) return;
-        uler.moveSnake(makan);
+        uler.moveSnake(point, buah);
+        scoreLabel.setText(String.valueOf(point.getPoint()));
         
     }
-
+    
     public void startGame(Scene gameScene){
-        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
+        this.gc = this.canvasGame.getGraphicsContext2D();
+        this.drawBackground(this.gc);
+        this.timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
-        makan.spawn(uler, 100, 100);
+        buah.spawn(uler, 100, 100);
 
-
-        gameScene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+          gameScene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event){
                 KeyCode code = event.getCode();
@@ -97,12 +97,12 @@ public class GameController {
                     uler.setDir(DIRECTION.RIGHT);
                 } else if(code == KeyCode.W){
                     uler.setDir(DIRECTION.UP);
-                } 
+                }
                 
             }
-        });{
-            
         
+        });{
+        }
     }
 
     public void clearGame(){
@@ -125,7 +125,4 @@ public class GameController {
         return (this.uler.getHead().getX() == 100 || this.uler.getHead().getY() == 100 
         || this.uler.getHead().getX() == -1 || this.uler.getHead().getY() == -1);
     }
-
-  
-    
 }
