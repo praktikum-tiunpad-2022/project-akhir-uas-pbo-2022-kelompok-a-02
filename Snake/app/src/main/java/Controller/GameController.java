@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -19,6 +20,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.Node;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+
 
 import Model.*;
 
@@ -38,11 +40,15 @@ public class GameController {
     @FXML
     private Label scoreLabel;
 
+    @FXML
+    private Button tButton;
+
     public GameController(){
         buah = new Fruit("FF4500");
         uler = new Snake(49, 49);
         point = new Point();
         scoreLabel = new Label("0");
+       
     }
 
     public void switchToMain(ActionEvent event) throws IOException{
@@ -53,6 +59,17 @@ public class GameController {
         stage.setScene(scene);
         stage.show();
     }
+    public void switchToMainAfterPlay(ActionEvent event) throws IOException{
+        this.clearGame();
+        root = FXMLLoader.load(
+        getClass().getResource("/View/MainMenu.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        
+    }
+
+    
     
     private void drawBackground(GraphicsContext gc) {
         for (int i = 0; i < 100; i++) {
@@ -67,14 +84,36 @@ public class GameController {
         }
     }
 
+ 
+
     public void run(){
         this.gc = this.canvasGame.getGraphicsContext2D();
         // buah.drawFruit(gc);  
         uler.drawSnake(gc);
-        if(isHitting()) return;
+        if(this.isHitting() == true) {
+            
+                try{
+                    // this.clearGame();
+                    //Switch scene tanpa menggunakan button sebagai action event,tButton hanya sebagai penghubung agar dabat berpindah 
+                    GameOverController ge = new GameOverController();
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/GameOver.fxml"));
+                    root = loader.load();
+                    ge = loader.getController();
+                    this.stage = (Stage) tButton.getScene().getWindow();
+                    this.scene = new Scene(root);
+                    stage.setScene(scene);
+                    ge.setInitialScore(this.scoreLabel.getText());
+                    // stage.show();`
+                
+                }
+                catch(Exception e){
+                    e.printStackTrace();
+                }
+
+            
+        };
         uler.moveSnake(isEating());
-        scoreLabel.setText(String.valueOf(point.getPoint()));
-        
+        scoreLabel.setText(String.valueOf(point.getPoint()));    
     }
     
     public void startGame(Scene gameScene){
@@ -82,7 +121,8 @@ public class GameController {
         this.drawBackground(this.gc);
         buah.spawn(uler, 100, 100);
         buah.drawFruit(gc);  
-        this.timeline = new Timeline(new KeyFrame(Duration.millis(Speed.speed), e -> run()));
+        //Line 85 sementara
+        this.timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
 
@@ -103,12 +143,15 @@ public class GameController {
             }
         
         });{
+           
         }
     }
 
     public void clearGame(){
         this.uler.deleteAllBody();
         this.timeline.stop();
+        this.timeline.getKeyFrames().clear();
+        this.timeline = null;
     }
 
      private boolean isHitting(){
