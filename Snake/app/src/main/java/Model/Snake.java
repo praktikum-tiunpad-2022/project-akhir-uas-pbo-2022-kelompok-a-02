@@ -123,6 +123,7 @@ public class Snake {
         if(head.sameCoor(food.getFruit())){
             body.add(0, new Node(x, y, "4674E9"));
             food.spawn(this, 100, 100);
+            // food.drawFruit(null);
             point.addPoint();
         } else {
             moveBody(x, y);

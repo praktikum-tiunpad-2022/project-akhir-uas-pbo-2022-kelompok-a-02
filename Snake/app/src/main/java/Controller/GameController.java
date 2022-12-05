@@ -67,12 +67,22 @@ public class GameController {
         }
     }
 
+    public boolean isEating() {
+        boolean isEat = uler.getHead().sameCoor(buah.getFruit());
+        if(isEat){
+            gc = canvasGame.getGraphicsContext2D();
+            buah.spawn(uler, 100, 100);
+            buah.drawFruit(gc);
+        }
+        return isEat;
+    }
+
     public void run(){
         this.gc = this.canvasGame.getGraphicsContext2D();
-        buah.getFruit().drawNode(gc);  
+        // buah.drawFruit(gc);  
         uler.drawSnake(gc);
         if(isHitting()) return;
-        uler.moveSnake(point, buah);
+        uler.moveSnake(isEating());
         scoreLabel.setText(String.valueOf(point.getPoint()));
         
     }
@@ -80,6 +90,8 @@ public class GameController {
     public void startGame(Scene gameScene){
         this.gc = this.canvasGame.getGraphicsContext2D();
         this.drawBackground(this.gc);
+        buah.spawn(uler, 100, 100);
+        buah.drawFruit(gc);  
         this.timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();

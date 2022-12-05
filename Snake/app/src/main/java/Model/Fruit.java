@@ -1,4 +1,7 @@
 package Model;
+
+import javafx.scene.canvas.GraphicsContext;
+
 /**
  * Fruit.java
  * 
@@ -17,7 +20,7 @@ public class Fruit {
     // setter & getter
     public void setFruit(Node fruit) {
         this.fruit = fruit;
-    }
+    } 
     public Node getFruit() {
         return fruit;
     }
@@ -48,4 +51,10 @@ public class Fruit {
         return true;
     }
     
+    /**
+     * 
+     */
+    public void drawFruit(GraphicsContext gc) {
+        this.fruit.drawNode(gc);
+    }
 }
