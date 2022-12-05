@@ -12,10 +12,15 @@ import javafx.scene.canvas.GraphicsContext;
 public class Fruit {
     private Node fruit;
     public Fruit(){
-        fruit = new Node();
+        fruit = new Node("FF4500");
     }
     public Fruit(String info){
         fruit = new Node(info);
+    }
+    public Fruit(int x, int y){
+        fruit = new Node("FF4500");
+        fruit.setX(x);
+        fruit.setY(y);
     }
     // setter & getter
     public void setFruit(Node fruit) {
@@ -33,6 +38,23 @@ public class Fruit {
         } while (!isSpawnable(player, x, y));
         this.fruit.setX(x);
         this.fruit.setY(y);
+    }
+
+    /**
+     * spawn for two players
+     * @param player1
+     * @param player2
+     * @param rows
+     * @param column
+     */
+    public void spawn(Snake player1, Snake player2, int rows, int column){
+        int x, y;
+        do {
+            x = (int)(Math.random() * rows);
+            y = (int)(Math.random() * column);
+        } while (!isSpawnable(player1, x, y) && !isSpawnable(player2, x, y));
+        fruit.setX(x);
+        fruit.setY(y);
     }
 
     /**
