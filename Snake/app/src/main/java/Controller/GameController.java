@@ -4,7 +4,6 @@ import java.io.IOException;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -17,7 +16,6 @@ import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
-import javafx.scene.Node;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -46,15 +44,6 @@ public class GameController {
         point = new Point();
         scoreLabel = new Label("0");
     }
-
-    public void switchToMain(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(
-        getClass().getResource("/View/MainMenu.fxml"));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
     
     private void drawBackground(GraphicsContext gc) {
         for (int i = 0; i < 100; i++) {
@@ -70,8 +59,7 @@ public class GameController {
     }
 
     public void run(){
-        this.gc = this.canvasGame.getGraphicsContext2D();
-        // buah.drawFruit(gc);  
+        this.gc = this.canvasGame.getGraphicsContext2D();  
         uler.drawSnake(gc);
         if(isHitting()) {
             try {
