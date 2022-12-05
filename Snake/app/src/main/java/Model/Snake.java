@@ -2,6 +2,7 @@ package Model;
 import java.util.ArrayList;
 
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.paint.Color;
 
 /**
  * Snake.java
@@ -75,11 +76,30 @@ public class Snake {
 
     }
 
+    /**
+     * to draw the body and head of the snake
+     * 
+     * update : 
+     * to make things lighter, we try to also draw the last node of the snake into the color of the map.
+     * if we implement it that way, we dont need to draw in the map for every frame, 
+     * we just need to draw in the snake and replace the coordinates that is not used anymore.
+     * @param gambar
+     */
     public void drawSnake(GraphicsContext gambar){
+        int x = body.get(body.size()-1).getX();
+        int y = body.get(body.size()-1).getY();
         for (int i = 0; i < body.size(); i++) {
             body.get(i).drawNode(gambar);
         }
         head.drawNode(gambar);
+
+        // to draw in the map 
+        if ((x + y) % 2 == 0){
+            gambar.setFill(Color.web("AAD751"));
+        } else{
+            gambar.setFill(Color.web("A2D149"));
+        }
+        gambar.fillRoundRect(x*8, y*8, 8, 8, 0, 0);
     }
 
     // public boolean isEating(Fruit food){
@@ -104,6 +124,17 @@ public class Snake {
             body.add(0, new Node(x, y, "4674E9"));
             food.spawn(this, 20, 20);
             point.addPoint();
+        } else {
+            moveBody(x, y);
+        }
+    }
+
+    public void moveSnake(boolean isEating){
+        int x = head.getX();
+        int y = head.getY();
+        dir.moveHead(head);
+        if(isEating){
+            body.add(0, new Node(x, y, "4674E9"));
         } else {
             moveBody(x, y);
         }

@@ -32,11 +32,10 @@ public class GameController {
     private Scene s;
     private Point point;
     private Timeline timeline; 
+    // private Scene s;
 
     @FXML
     private Canvas canvasGame;
-    @FXML
-    private Label scoreLabel;
 
     public GameController(){
         buah = new Fruit("FF4500");
@@ -55,6 +54,8 @@ public class GameController {
     }
     
     private void drawBackground() {
+        this.gc = this.canvasGame.getGraphicsContext2D();
+
         for (int i = 0; i < 100; i++) {
             for (int j = 0; j < 100; j++) {
                 if ((i + j) % 2 == 0){
@@ -70,21 +71,21 @@ public class GameController {
     public void run(){
         this.gc = this.canvasGame.getGraphicsContext2D();
         this.drawBackground();
-        buah.getFruit().drawNode(gc);  
+        makan.getFruit().drawNode(gc);  
         uler.drawSnake(gc);
         if(isHitting()) return;
-        uler.moveSnake(point, buah);
-        scoreLabel.setText(String.valueOf(point.getPoint()));
+        uler.moveSnake(makan);
         
     }
 
     public void startGame(Scene gameScene){
-        this.timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
+        Timeline timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
-        buah.spawn(uler, 100, 100);
+        makan.spawn(uler, 100, 100);
 
-          gameScene.setOnKeyPressed(new EventHandler<KeyEvent>() {
+
+        gameScene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent event){
                 KeyCode code = event.getCode();
@@ -96,15 +97,12 @@ public class GameController {
                     uler.setDir(DIRECTION.RIGHT);
                 } else if(code == KeyCode.W){
                     uler.setDir(DIRECTION.UP);
-                }
+                } 
                 
             }
-        
         });{
-           
             
-            
-        }
+        
     }
 
     public void clearGame(){
@@ -127,8 +125,6 @@ public class GameController {
         return (this.uler.getHead().getX() == 100 || this.uler.getHead().getY() == 100 
         || this.uler.getHead().getX() == -1 || this.uler.getHead().getY() == -1);
     }
-
-    
 
   
     
