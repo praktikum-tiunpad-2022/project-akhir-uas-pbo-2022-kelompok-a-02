@@ -12,23 +12,34 @@ import javafx.stage.Stage;
 import javafx.scene.Node;
 
 
-public class GameOverController {
+public class GameOverDuoController {
     private Stage stage;
     private Scene scene;
     private Parent root;
     private GameController g; 
+    private DuoGameController g2;
 
     @FXML
-    private Label endScore;
+    private Label winnerLabel;
 
-    public GameOverController(){
-        endScore = new Label();
+    @FXML
+    private Label p1Score;
+
+    @FXML
+    private Label p2Score;
+
+    public GameOverDuoController(){
+        winnerLabel = new Label();
+        p1Score = new Label();
+        p2Score = new Label();
         
         
     }
 
-    public void setInitialScore(String endScore){
-        this.endScore.setText(endScore);
+    public void setInitialScore(String winner , String score1,String score2){
+        this.winnerLabel.setText(winner);
+        this.p1Score.setText(score1);
+        this.p2Score.setText(score2);
 
     }
   
@@ -44,13 +55,14 @@ public class GameOverController {
     }
 
     public void switchToPlay(ActionEvent event) throws IOException{
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/GameScreen.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DoublePlayerScreen.fxml"));
         root = loader.load();
-        this.g = loader.getController();
+        this.g2 = loader.getController();
+        
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        g.startGame(scene);
+        g2.startGame(scene);
         
     }
 }

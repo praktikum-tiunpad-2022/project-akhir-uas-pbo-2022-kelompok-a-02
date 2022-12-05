@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameController">
+<VBox xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DuoGameController">
    <children>
       <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: #E5D9B6;">
          <children>
@@ -22,7 +22,7 @@
                   <Font size="68.0" />
                </font>
             </Label>
-            <Button id="commonButton" layoutX="14.0" layoutY="694.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="50.0" prefWidth="170.0" style="-fx-font-size: 20;" stylesheets="@../css/style.css" text="Back To Menu">
+            <Button fx:id="tButton" id="commonButton" layoutX="14.0" layoutY="694.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="50.0" prefWidth="170.0" style="-fx-font-size: 20;" stylesheets="@../css/style.css" text="Back To Menu">
                <font>
                   <Font size="36.0" />
                </font>

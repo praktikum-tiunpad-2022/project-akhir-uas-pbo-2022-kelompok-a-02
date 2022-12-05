@@ -11,18 +11,23 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="452.0" prefWidth="681.0" style="-fx-background-color: #E5D9B6;" VBox.vgrow="ALWAYS">
       <children>
-            <Button id="playButton" layoutX="236.0" layoutY="232.0" mnemonicParsing="false" onAction="#switchToPlay" prefHeight="43.0" prefWidth="167.0" stylesheets="@../css/style.css" text="PLAY">
+            <Button id="playButton" fx:id="spButton" layoutX="202.0" layoutY="231.0" mnemonicParsing="false" onAction="#switchToSinglePlay" prefHeight="39.0" prefWidth="118.0" stylesheets="@../css/style.css" text="Single Player">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font></Button>
-            <Button id="commonButton" layoutX="204.0" layoutY="289.0" mnemonicParsing="false" onAction="#switchToScore" stylesheets="@../css/style.css" text="SCORE BOARD" textFill="WHITE" />
             <ImageView fitHeight="188.0" fitWidth="160.0" layoutX="255.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@snake.png" />
+                  <Image url="@../img/snake.png" />
                </image>
             </ImageView>
-            <Button id="commonButton" layoutX="331.0" layoutY="289.0" mnemonicParsing="false" onAction="#switchToScore" prefHeight="39.0" prefWidth="102.0" stylesheets="@../css/style.css" text="SETTING" textFill="WHITE" />
+            <Button fx:id = "" id="commonButton" layoutX="217.0" layoutY="288.0" mnemonicParsing="false" onAction="#switchToSetting" prefHeight="39.0" prefWidth="102.0" stylesheets="@../css/style.css" text="SETTING" textFill="WHITE" />
             <Button id="exitButton" layoutX="293.0" layoutY="342.0" mnemonicParsing="false" onAction="#exit" stylesheets="@../css/style.css" text="EXIT" textFill="WHITE" />
+            <Button id="playButton" fx:id="dpButton" layoutX="330.0" layoutY="231.0" mnemonicParsing="false" onAction="#switchToDoublePlay" prefHeight="39.0" prefWidth="118.0" stylesheets="@../css/style.css" text="Double Player">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button id="commonButton" fx:id="boardButton" layoutX="331.0" layoutY="288.0" mnemonicParsing="false" onAction="#switchToScore" prefHeight="39.0" prefWidth="102.0" stylesheets="@../css/style.css" text="SCOREBOARD" textFill="WHITE" />
       </children>
     </AnchorPane>
   </children>
