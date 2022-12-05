@@ -13,7 +13,6 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.Node;
@@ -36,7 +35,6 @@ public class DuoGameController {
     private boolean isDead1 = false, isDead2 = false;
     private Point point1, point2;
     private ArrayList<Fruit> foods ;
-    // private Fruit[] foods = 
 
     @FXML
     private Canvas canvasGame;
@@ -57,7 +55,6 @@ public class DuoGameController {
         playerTwoScore = new Label("0");
         point2 = new Point();
         playerTwoScore.setText(String.valueOf(point2.getPoint()));
-        // foods = new ArrayList<Fruit>(4);
         foods = new ArrayList<Fruit>();
         for (int i = 0; i < 4; i++) {
             foods.add(new Fruit());
@@ -72,7 +69,7 @@ public class DuoGameController {
             foods.get(i).spawn(player1, player2, 100, 100);
             foods.get(i).drawFruit(gc);
         }
-        this.timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
+        this.timeline = new Timeline(new KeyFrame(Duration.millis(Speed.speed), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
 
