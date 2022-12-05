@@ -20,6 +20,7 @@ public class SceneController {
     private Scene scene;
     private Parent root;
     private GameController g; 
+    private DuoGameController game;
 
     public void switchToMain(ActionEvent event) throws IOException{
         root = FXMLLoader.load(
@@ -45,14 +46,15 @@ public class SceneController {
      * @throws IOException
      */
     public void switchToPlay(ActionEvent event) throws IOException{
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/GameScreen.fxml"));
+        // FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DoublePlayerScreen.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/DoublePlayerScreen.fxml"));
         root = loader.load();
-        this.g = loader.getController();
+        this.game = loader.getController();
         
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
-        g.startGame(scene);
+        game.startGame(scene);
         
     }
 

@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -29,7 +30,6 @@ public class GameController {
     private Fruit buah;
     private Snake uler;
     private GraphicsContext gc;
-    private Scene s;
     private Point point;
     private Timeline timeline;
 
@@ -37,6 +37,8 @@ public class GameController {
     private Canvas canvasGame;
     @FXML
     private Label scoreLabel;
+    @FXML
+    private Button tButton;
 
     public GameController(){
         buah = new Fruit("FF4500");
@@ -71,7 +73,13 @@ public class GameController {
         this.gc = this.canvasGame.getGraphicsContext2D();
         // buah.drawFruit(gc);  
         uler.drawSnake(gc);
-        if(isHitting()) return;
+        if(isHitting()) {
+            try {
+                gameOver();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        };
         uler.moveSnake(isEating());
         scoreLabel.setText(String.valueOf(point.getPoint()));
         
@@ -82,7 +90,7 @@ public class GameController {
         this.drawBackground(this.gc);
         buah.spawn(uler, 100, 100);
         buah.drawFruit(gc);  
-        this.timeline = new Timeline(new KeyFrame(Duration.millis(Speed.speed), e -> run()));
+        this.timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
 
@@ -103,6 +111,18 @@ public class GameController {
             }
         
         });{
+        }
+    }
+
+    public void gameOver() throws IOException{
+        try {
+            root = FXMLLoader.load(getClass().getResource("View/MainMenu.fxml"));
+            stage = (Stage) tButton.getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
