@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import Controller.SceneController?>
 
 <VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SceneController">
   <children>
@@ -18,10 +19,10 @@
             <Button id="commonButton" layoutX="204.0" layoutY="289.0" mnemonicParsing="false" onAction="#switchToScore" stylesheets="@../css/style.css" text="SCORE BOARD" textFill="WHITE" />
             <ImageView fitHeight="188.0" fitWidth="160.0" layoutX="255.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@snake.png" />
+                  <Image url="@../img/snake.png" />
                </image>
             </ImageView>
-            <Button id="commonButton" layoutX="331.0" layoutY="289.0" mnemonicParsing="false" onAction="#switchToScore" prefHeight="39.0" prefWidth="102.0" stylesheets="@../css/style.css" text="SETTING" textFill="WHITE" />
+            <Button id="commonButton" layoutX="331.0" layoutY="289.0" mnemonicParsing="false" onAction="#switchToSetting" prefHeight="39.0" prefWidth="102.0" stylesheets="@../css/style.css" text="SETTING" textFill="WHITE" />
             <Button id="exitButton" layoutX="293.0" layoutY="342.0" mnemonicParsing="false" onAction="#exit" stylesheets="@../css/style.css" text="EXIT" textFill="WHITE" />
       </children>
     </AnchorPane>
