@@ -31,7 +31,7 @@ public class GameController {
     private GraphicsContext gc;
     private Scene s;
     private Point point;
-    private Timeline timeline; 
+    private Timeline timeline;
 
     @FXML
     private Canvas canvasGame;
@@ -67,16 +67,6 @@ public class GameController {
         }
     }
 
-    public boolean isEating() {
-        boolean isEat = uler.getHead().sameCoor(buah.getFruit());
-        if(isEat){
-            gc = canvasGame.getGraphicsContext2D();
-            buah.spawn(uler, 100, 100);
-            buah.drawFruit(gc);
-        }
-        return isEat;
-    }
-
     public void run(){
         this.gc = this.canvasGame.getGraphicsContext2D();
         // buah.drawFruit(gc);  
@@ -92,10 +82,9 @@ public class GameController {
         this.drawBackground(this.gc);
         buah.spawn(uler, 100, 100);
         buah.drawFruit(gc);  
-        this.timeline = new Timeline(new KeyFrame(Duration.millis(130), e -> run()));
+        this.timeline = new Timeline(new KeyFrame(Duration.millis(Speed.speed), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
-        buah.spawn(uler, 100, 100);
 
           gameScene.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
@@ -136,5 +125,16 @@ public class GameController {
     private boolean hitWall(){
         return (this.uler.getHead().getX() == 100 || this.uler.getHead().getY() == 100 
         || this.uler.getHead().getX() == -1 || this.uler.getHead().getY() == -1);
+    }
+
+    public boolean isEating() {
+        boolean isEat = uler.getHead().sameCoor(buah.getFruit());
+        if(isEat){
+            gc = canvasGame.getGraphicsContext2D();
+            buah.spawn(uler, 100, 100);
+            buah.drawFruit(gc);
+            this.point.addPoint();
+        }
+        return isEat;
     }
 }
