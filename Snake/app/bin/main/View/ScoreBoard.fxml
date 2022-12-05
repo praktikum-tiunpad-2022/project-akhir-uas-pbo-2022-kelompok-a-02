@@ -10,12 +10,17 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #E5D9B6;" VBox.vgrow="ALWAYS">
          <children>
-            <Label layoutX="166.0" layoutY="37.0" text="SCORE BOARD">
+            <Label layoutX="166.0" layoutY="8.0" text="SCORE BOARD">
                <font>
                   <Font name="Tahoma Bold" size="42.0" />
                </font>
             </Label>
-            <Button layoutX="297.0" layoutY="332.0" mnemonicParsing="false" onAction="#switchToMain" style="-fx-background-color: #5F8D4E;" text="BACK" />
+            <Button id="commonButton" layoutX="292.0" layoutY="345.0" mnemonicParsing="false" onAction="#switchToMain" stylesheets="@../css/style.css" text="BACK" />
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="91.0" layoutY="64.0" prefHeight="271.0" prefWidth="480.0" text="p" textAlignment="CENTER">
+               <font>
+                  <Font name="Tahoma" size="14.0" />
+               </font>
+            </Label>
          </children>
     </AnchorPane>
   </children>

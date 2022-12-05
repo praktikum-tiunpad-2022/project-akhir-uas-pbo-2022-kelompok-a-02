@@ -17,14 +17,14 @@
                   <Font size="41.0" />
                </font>
             </Label>
-            <Label fx:id="scoreLabel" layoutX="59.0" layoutY="73.0" prefHeight="92.0" prefWidth="79.0">
+            <Label fx:id="scoreLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="73.0" prefHeight="92.0" prefWidth="79.0">
                <font>
                   <Font size="68.0" />
                </font>
             </Label>
-            <Button layoutX="14.0" layoutY="694.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #5F8D4E;" text="Back To Menu">
+            <Button id="commonButton" layoutX="14.0" layoutY="694.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="50.0" prefWidth="170.0" style="-fx-font-size: 20;" stylesheets="@../css/style.css" text="Back To Menu">
                <font>
-                  <Font size="22.0" />
+                  <Font size="36.0" />
                </font>
             </Button>
          </children>
