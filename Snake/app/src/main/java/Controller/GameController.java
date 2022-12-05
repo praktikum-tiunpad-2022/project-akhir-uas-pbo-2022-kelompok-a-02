@@ -82,7 +82,6 @@ public class GameController {
         };
         uler.moveSnake(isEating());
         scoreLabel.setText(String.valueOf(point.getPoint()));
-        
     }
     
     public void startGame(Scene gameScene){
