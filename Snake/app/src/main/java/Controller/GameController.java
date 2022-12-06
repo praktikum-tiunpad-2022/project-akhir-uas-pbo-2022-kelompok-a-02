@@ -16,6 +16,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -33,6 +34,8 @@ public class GameController {
     private GraphicsContext gc;
     private Point point;
     private Timeline timeline;
+    private static Sound sounds;
+    private MediaPlayer bkMusic;
 
     @FXML
     private Canvas canvasGame;
@@ -80,6 +83,8 @@ public class GameController {
         uler.drawSnake(gc);
         if(isHitting()){
             try {
+                this.bkMusic.stop();
+                this.sounds.getEndSound().play();
                 GameOverController gcc = new GameOverController();
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/GameOver.fxml"));
                 root = loader.load();
@@ -105,6 +110,20 @@ public class GameController {
         this.drawBackground(this.gc);
         buah.spawn(uler, 100, 100);
         buah.drawFruit(gc);  
+
+        try{
+            sounds = new Sound();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        bkMusic = sounds.getBkMusic();
+        bkMusic.setOnEndOfMedia(new Runnable() {
+            public void run() {
+                bkMusic.seek(Duration.ZERO);
+            }
+        });
+        bkMusic.play();
+
         this.timeline = new Timeline(new KeyFrame(Duration.millis(Speed.speed), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
@@ -162,6 +181,7 @@ public class GameController {
             buah.spawn(uler, 100, 100);
             buah.drawFruit(gc);
             this.point.addPoint();
+            sounds.getBiteSound().play();
         }
         return isEat;
     }

@@ -14,6 +14,7 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.Node;
 import javafx.stage.Stage;
@@ -30,6 +31,8 @@ public class DuoGameController {
     private Parent root;
     private GraphicsContext gc;
     private Timeline timeline;
+    private static Sound sounds;
+    private MediaPlayer bkMusic;
     
     private Snake player1, player2;
     private boolean isDead1 = false, isDead2 = false;
@@ -69,6 +72,20 @@ public class DuoGameController {
             foods.get(i).spawn(player1, player2, 100, 100);
             foods.get(i).drawFruit(gc);
         }
+
+        try{
+            sounds = new Sound();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        bkMusic = sounds.getBkMusic();
+        bkMusic.setOnEndOfMedia(new Runnable() {
+            public void run() {
+                bkMusic.seek(Duration.ZERO);
+            }
+        });
+        bkMusic.play();
+
         this.timeline = new Timeline(new KeyFrame(Duration.millis(Speed.speed), e -> run()));
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
@@ -132,6 +149,8 @@ public class DuoGameController {
 
         if(isHitting(player1) || isHitting(player2)) {
             try {
+                this.bkMusic.stop();
+                this.sounds.getEndSound().play();
                 GameOverDuoController gdc = new GameOverDuoController();
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/GameOverDuo.fxml"));
                 root = loader.load();
@@ -176,6 +195,7 @@ public class DuoGameController {
                 foods.get(i).spawn(player1, player2, 100, 100);
                 foods.get(i).drawFruit(gc);
                 point.addPoint();
+                sounds.getBiteSound().play();
                 return true;
             }
         }
