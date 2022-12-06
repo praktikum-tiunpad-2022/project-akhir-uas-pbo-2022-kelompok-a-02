@@ -29,19 +29,24 @@ Snake Game is a very simple game where the player controls a snake. The goal of 
    - Membuat link antara jhrame (menu -> game, menu -> leaderboard, menu -> exit)
    
 - **[Sprint 3](changelog/sprint-3.md) - (date from x until x)** 
-   - Short changes 1
-   - Short changes 2
+   - Add Multiplayer mode
+   - Add background music and sound effect
+   - Add gameover screen
+   - Add Settings
+   - Improve drawing logic
+   - Improve UI
 
 ## Running The App
 
-TBA
+File utama : App.java
+1. Masuk ke dalam direktori Snake
+2. Build project dengan command `gradle build`
+3. Control yang digunakan dalam permainan adalah WASD untuk player satu dan IJKL untuk player dua (di mode multiplayer)
 
 ## Classes Used
 
-TO;DO
-
-UML image here
+![](img/snake_UML.png)
 
 ## Notable Assumption and Design App Details
 
-TO;DO
+- 
